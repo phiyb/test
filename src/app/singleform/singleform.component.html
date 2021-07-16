@@ -1,0 +1,18 @@
+<p>singleform works!</p>
+<div nz-row>
+  <div nz-col nzSpan="8">
+    <input nz-input placeholder="Basic usage" #input  (input)="fillterEm(input)"/>
+  </div>
+</div>
+<div nz-row>
+  <div nz-col nzSpan="8">
+    <app-departmentcom (onSub)="fillterEmployee($event)" [selectedKey]="selectedKey"></app-departmentcom>
+
+  </div>
+  <div nz-col nzSpan="16">
+    <app-emloyeecom [employees]="Employee"></app-emloyeecom>
+  </div>
+</div>
+
+
+

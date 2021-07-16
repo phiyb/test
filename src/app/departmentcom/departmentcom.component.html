@@ -1,0 +1,12 @@
+<h2>Department</h2>
+<nz-tree
+  #nzTreeComponent
+  [nzData]="nodes"
+  nzCheckable
+  (nzClick)="nzClick($event)"
+  (nzContextMenu)="nzClick($event)"
+  (nzCheckBoxChange)="nzCheck($event)"
+  (nzExpandChange)="nzCheck($event)"
+  [nzSelectedKeys]="selectedKey"
+></nz-tree>
+
